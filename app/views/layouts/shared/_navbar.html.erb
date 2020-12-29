@@ -1,0 +1,153 @@
+<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">		
+        <!-- Header -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" 
+                    data-toggle="collapse" 
+                    data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                Hlin Reykdal
+            </a>
+        </div>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown full-width">
+                    <a href="#" class="dropdown-toggle" 
+                    data-toggle="dropdown">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                    
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jewlery</a>
+
+                              <li><a href="#">Necklace</a></li>
+                              <li><a href="#">Bracelets</a></li>
+                              <li><a href="#">Ear rings</a></li>
+                              <li><a href="#">Rings</a></li>
+                          
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Beauty</a>
+                              <li><a href="#">Nails</a></li>
+                              <li><a href="#">Soaps</a></li>
+                            
+                              <li><a href="#">Handcream</a></li>
+                              <li><a href="#">Lip balsam</a></li>
+                              <li><a href="#">Perfume</a></li>
+
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Candle & Home fragance</a>
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Home decoure</a>
+
+     
+
+                        
+                    </ul>
+                </li>          
+                <li class="dropdown full-width">
+                    <a href="#" class="dropdown-toggle" 
+                    data-toggle="dropdown">
+                        Info
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">balalb</a></li>
+                        <li><a href="#">Stockists
+                            </a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Location</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </li>          
+               <li class="dropdown full-width">
+                    <a href="#" class="dropdown-toggle" 
+                    data-toggle="dropdown">
+                        Features
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>       
+
+                <li class="dropdown full-width">
+                    <a href="#" class="dropdown-toggle" 
+                    data-toggle="dropdown">
+                        Presskit
+                    </a>
+                    
+                </li>    
+
+                <li class="dropdown full-width pull-right">
+                    <a href="#" class="dropdown-toggle" 
+                    data-toggle="dropdown">
+                        Cart 0
+                    </a>
+                    
+                </li>
+
+                <li class="dropdown full-width pull-right">
+                    <a href="#" class="dropdown-toggle" 
+                    data-toggle="dropdown">
+                        Log in
+                    </a>
+                    
+                </li>                                 
+            </ul>
+        </div>
+       </div> 
+    </div>
+
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+  /**
+ * Listen to scroll to change header opacity class
+ */
+function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("scrolled");
+    }else{
+        $('.navbar').removeClass("scrolled");
+    }
+}
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
+</script>
+<script>
+    $('.dropdown').hover(
+        function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+        }, 
+        function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+        }
+    );
+
+    $('.dropdown-menu').hover(
+        function() {
+            $(this).stop(true, true);
+        },
+        function() {
+            $(this).stop(true, true).delay(200).fadeOut();
+        }
+    );
+</script>

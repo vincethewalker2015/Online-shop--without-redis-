@@ -1,0 +1,32 @@
+<%= form_for(@stockist) do |f| %>
+  <% if @stockist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stockist.errors.count, "error") %> prohibited this stockist from being saved:</h2>
+
+      <ul>
+      <% @stockist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br>
+    <%= f.text_field :website %>
+  </div>
+  
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

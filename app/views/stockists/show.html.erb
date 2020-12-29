@@ -1,0 +1,26 @@
+<div class="container-fluid">
+<div class="row product_top">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @stockist.name %>
+</p>
+
+
+
+<p>
+  <strong>Address:</strong>
+  <%= @stockist.address %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= link_to @stockist.website %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_stockist_path(@stockist) %> |
+<%= link_to 'Back', stockists_path %>

@@ -1,0 +1,28 @@
+<div id="site-wrapper">
+
+		<div id="site-canvas">
+
+      		<div id="site-menu">
+      			<span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'><button class="close-canvas"></button></span>
+			<%= form_for(:user, :url => session_path(:user)) do |f| %>
+
+			  <div class="form-group red">
+
+			  	<%= f.label :email %>
+  				<%= f.text_field :email, class: 'form-control' %><br>
+  				<br>
+  				<%= f.label :password %>
+ 				<%= f.password_field :password, class: 'form-control'  %><br>
+ 				<br>
+  				<%= f.check_box :remember_me %>
+  				<%= f.label :remember_me %><br>
+ 				<p><%= f.submit 'Sign in' %></p><br>
+ 				<br>
+  				<%= link_to "Forgot your password?", new_password_path(:user) %>
+  			  </div>	
+			<% end %>
+            </div>
+      
+
+    	</div><!-- #site-canvas -->
+ 	  </div><!-- #site-wrapper> -->

@@ -1,0 +1,9 @@
+<% if @cart %>
+ <li class="dropdown full-width navbar-right cart-wrapper">
+    <% if @cart.empty? %>
+        Cart 0
+      <% else %>
+        <%= link_to "Cart #{pluralize @cart.count, "item"}", cart_path %>
+    <% end %>           
+ </li>
+<% end %>

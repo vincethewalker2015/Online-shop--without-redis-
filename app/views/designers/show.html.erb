@@ -1,0 +1,17 @@
+<header id="necklace_header">
+<h1>
+  <%= @designer.designer_name %>
+</h1>
+</header>
+
+
+
+<%= render "designers/table", products: @products %>
+
+
+
+<% if current_user && current_user.admin? %>
+	<%= link_to 'Edit', edit_designer_path(@designer) %> |
+<% end %>
+
+<%= link_to 'Back', root_path %>

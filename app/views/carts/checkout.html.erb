@@ -1,0 +1,61 @@
+<div class="container">
+<div class="row product_top">
+ <h2>You are checking out the following products:</h2>
+
+  <ul>
+	<% @cart.items.each do |item| %>
+		<li>
+			<%= item.quantity %>
+			<%= item.product.name %>
+			<%= item.total_price %>
+		</li>
+
+	<% end %>
+
+  </ul>
+
+<p>Total price: <%= number_to_currency @cart.total_price %></p>
+
+
+<%= form_for @order_form, url: orders_path do |f| %>
+	<%= render 'orders/errors' %>
+	<h3>Some of your personal details</h3>
+	<%= f.fields_for :user, f.object.user do |u| %>
+		<div class="form-group">
+			<p><%= u.text_field :name, placeholder: "Name", class: "form-control input-lg" %></p>
+			<p><%= u.text_field :email, placeholder: "email", class: "form-control"%></p>
+			<span class="help-block">This will help you track your order more effectively</span>
+		</div>
+
+		<div class="form-group">
+			
+				<p class="col-md-6"><%= u.text_field :address, placeholder: "Address", class: "form-control"%></p>
+				<p class="col-md-3"><%= u.text_field :postal_code, placeholder: "Postal code / Zipcode", class: "form-control"%></p>
+				<p class="col-md-3"><%= u.text_field :city, placeholder: "City", class: "form-control"%></p>
+				<p><%= u.country_select :country, { priority_countries: [ "GB", "US", "DE", "ES", "PT" ]}, { class: "form-control" }%></p>
+				<p><%= u.text_field :phone, class: "form-control", placeholder: "Phone"%></p>
+				
+			
+			
+
+		</div>
+
+	
+</div>
+
+</div>	
+
+		<form id="checkout" method="post" action="/checkout">
+  			<div id="payment-form"></div>
+  		<p><%= f.submit "Place order", class: "btn btn-primary"%></p>
+		</form>
+
+		<script >
+		var clientToken = "<%=@client_token %>";
+
+braintree.setup(clientToken, "dropin", {
+  container: "payment-form"
+});
+	</script>	
+	<% end %>
+<% end %>

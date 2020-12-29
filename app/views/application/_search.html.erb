@@ -1,0 +1,11 @@
+<li class=" navbar-right searchbar">
+
+<%= form_tag search_products_path, method: 'get', class: 'navbar-form' do %>
+    <%= text_field_tag :query, params[:query], placeholder: "Enter search term", class: "form-control transparent-input",
+        :style => "padding-left:29px" %>
+    <%= button_tag(type: 'submit', class: "search-button transparent-input") do %> <span class="glyphicon glyphicon-search "></span>   
+  
+    <% end %>
+<% end %>
+
+</li>

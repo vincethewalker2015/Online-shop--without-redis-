@@ -1,0 +1,5 @@
+{
+  "name": "shop_without_redis",
+  "private": true,
+  "dependencies": {}
+}

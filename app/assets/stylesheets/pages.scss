@@ -1,0 +1,324 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+	background-color: #fff;
+    text-decoration: none;
+
+}
+
+
+p {
+	text-transform: uppercase;
+	font-size: .9em;
+	padding-left: 20px;
+}
+li a{
+	text-transform: uppercase;
+	font-size: .9em;
+    letter-spacing: .2em;
+    text-decoration: none;
+
+
+}
+
+li a :hover{
+	text-transform: uppercase;
+	color: #eaeaea;
+}
+
+figcaption a{
+  margin-left: 80px;
+  color: #555;
+  text-decoration: none;
+}
+
+figcaption>a:hover{
+  margin-left: 80px;
+  color: #555;
+
+}
+
+.help{
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: .2em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.help>li>a{
+    color: #555;
+}
+
+.dropdown-menu>li>a{
+	font-weight: 300;
+font-size: .9em;
+letter-spacing: .2em;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover 
+{
+font-weight: 300;
+font-size: .9em;	
+ color: #999;
+ text-decoration: none;
+ background-image: transparent;
+background-color: transparent;
+} 
+
+#index_header {
+    background: url('front_bud_full_1200_500.jpg');
+    min-height: 500px;
+    max-width: 100%;
+    background-repeat:no-repeat;
+    
+    background-size: cover;
+    background-position: center top; 
+  
+   
+}
+
+#about_head {
+    background: url('about/about12.png') ;
+    width: 110%;
+    height: auto ; /* ? */
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: cover;  
+    background-position: center top; 
+    height: 780px 
+}
+
+#down_head_about {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: url('about/about7.png') ;
+      height: auto ; /* ? */
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: cover;  
+    background-position: center top; 
+    height: 500px;
+    width: 120%;
+
+}
+
+#bottom-head-about{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: url('about/about3.png') ;
+      height: auto ; /* ? */
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: cover;  
+    background-position: center top; 
+    height: 350px;
+    width: 120%;
+
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+     background-color: transparent;
+    background-image: transparent;
+}
+
+
+.dropdown-toggle{
+    color:#555;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: none;
+}
+
+.navbar-brand{
+	margin-right: 200px;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default :hover {
+    background-color: rgba(255, 255, 255, .7);
+    border-color: rgba(231, 231, 231, .7);
+    
+}
+.navbar:hover {
+    background: rgba(255, 255, 255, .7) none repeat scroll 0 0 !important;
+}
+.navbar-default *:hover{
+  background:transparent !important;
+}
+.dropdown-menu > li > a:hover {
+    background-color: transparent;
+    background-image: transparent;
+}
+
+.navbar-nav > li > .dropdown-menu { 
+	background-color: transparent; 
+	background-image: transparent;
+}
+
+.dropdown-menu {
+position: static;
+top: 100%;
+left: 0;
+z-index: 1000;
+display: none;
+float: left;
+min-width: 160px;
+padding: 5px 0;
+margin: 2px 0 0;
+font-size: 14px;
+text-align: left;
+list-style: none;
+-webkit-box-shadow: none; 
+box-shadow: none !important;
+background-color: transparent;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+border: 0px solid #ccc;
+border: 0px solid rgba(0,0,0,.15);
+border-radius: 0px;
+
+}
+
+//Add the below transitions to allow a smooth color change similar to lyft
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+  
+    background: rgba(255, 255, 255, .7)
+}
+
+
+.dropdown.full-width {
+width : 120px;
+background-image: transparent;
+background-color: transparent;
+}
+
+.full-width.dropdown > .dropdown-menu > li > a {
+white-space: normal; 
+background-image: transparent;
+background-color: transparent;
+}
+
+
+
+.navbar-nav {
+    float: none; 
+    margin: 0;
+}
+
+
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.img-wrapp{
+    margin-bottom: 10px;
+}
+
+
+.full_front_img{
+    margin: 40px 0px;
+     background: url('../image/front_img_1200_500.jpg') ;
+    width: 100%;
+   height: auto ; /* ? */
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: cover;  
+    background-position: center top; 
+    height: 520px;
+    vertical-align: text-bottom;
+}
+
+
+/* IMAGE CAPTION THUMBMAILS */
+
+.center-block{
+
+    margin-bottom: 30px !important;
+}
+   
+ .caption {
+        width:100%;
+        bottom: .3rem;
+        position: absolute;
+        background:transparent;
+        }
+
+.thumbnails {
+
+       margin: auto 0;
+        border: 0 none;
+        box-shadow: none;
+        width: auto;
+        height: 100%
+
+
+
+    
+    }
+
+    .caption h4 {
+        color: #555;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+.thumbnails img {
+    max-height: 100%;
+    max-width: 100%;
+   
+}
+
+
+
+
+#footer{
+    padding: 40px 0px;
+    border-top: 1px #eaeaea solid;
+}
+
+#footer_nav > ul{
+    letter-spacing: .2em;
+}
+
+#footer_nav > ul >li {
+    text-transform: none;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: .2em;
+
+}
+
+#footer_nav > ul >li > a {
+    text-transform: none;
+    color: #555;
+    font-size: .8em;
+    margin: 5px 0px;
+    
+
+}
